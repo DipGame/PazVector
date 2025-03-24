@@ -1,0 +1,407 @@
+$color-black: #000;
+$color-black-1: #1A1A1A;
+$color-grey: #F7F7F7;
+$color-grey-2: #A1A1AA;
+$color-blue: #11357D;
+$color-white: #FFF;
+$color-red: #EF4444;
+
+$cursor-hover-white: url('./../img/cursor.svg') 7 0, pointer;
+
+* {
+	box-sizing: border-box !important;
+	background-repeat: no-repeat !important;
+	word-break: break-word !important;
+	color: $color-black-1;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	// overflow-y: scroll;
+	font-family: Inter;
+	// position: relative;
+	// background-color: $color-white-2;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+div,
+li,
+p,
+a,
+span,
+section,
+td,
+button {
+	font-family: Geologica;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+
+h1 {
+	font-family: Geologica;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: 0%;
+	word-wrap: break-word;
+}
+
+h2 {
+	font-family: Geologica;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: 0%;
+}
+
+.def_div {
+	h2 {
+		text-transform: uppercase;
+	}
+}
+
+.def_title {
+	margin-bottom: 30px;
+}
+
+h1.title {
+	margin: 50px auto 30px;
+	width: 100%;
+	max-width: 1320px;
+	padding: 0 15px;
+	text-transform: uppercase;
+}
+
+
+@media (max-width: 500px) {
+	// h1.title {
+	// 	margin: 50px auto 30px;
+	// }
+
+	// .def_title {
+	// 	margin-bottom: 20px;
+	// }
+
+	// .mob_center {
+	// 	text-align: center;
+	// }
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: Geologica;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0%;
+}
+
+@media (max-width: 500px) {
+
+	// h1 {
+	// 	font-family: Unbounded;
+	// 	font-weight: 500;
+	// 	font-size: 30px;
+	// 	line-height: 37.2px;
+	// 	letter-spacing: 0%;
+	// }
+
+	h2 {
+		font-family: Geologica;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 45px;
+		letter-spacing: 0%;
+	}
+
+	div,
+	li,
+	p,
+	a,
+	span,
+	section,
+	button {
+		font-family: Geologica;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0px;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: Geologica;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 32px;
+		letter-spacing: 0%;
+	}
+}
+
+a {
+	text-decoration: none;
+	transition: .5s;
+	cursor: $cursor-hover-white;
+}
+
+a:hover {
+	transition: .5s;
+	color: $color-blue !important;
+}
+
+main {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.padding {
+	padding: 0 15px;
+}
+
+.margin_bot {
+	margin-bottom: 100px;
+}
+
+@media (max-width: 720px) {
+	.margin_bot {
+		margin-bottom: 50px;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-direct {
+	flex-direction: column;
+}
+
+.smooth {
+	transition: .5s;
+}
+
+.smooth:hover {
+	transition: .5s;
+}
+
+.def_div {
+	width: 100%;
+	max-width: 1290px;
+	margin: 0 auto;
+}
+
+.button {
+	font-family: Geologica;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17.5px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: $color-white;
+	height: 50px;
+	width: 100%;
+	transition: .5s;
+	cursor: $cursor-hover-white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	padding: 5px 10px;
+	border: 1px solid $color-white;
+}
+
+.button:hover {
+	background-color: $color-black;
+	transition: .5s;
+	color: $color-white !important;
+	border: 1px solid $color-black;
+}
+
+.button_v2 {
+	font-family: Geologica;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17.5px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: $color-blue;
+	height: 50px;
+	width: 100%;
+	transition: .5s;
+	cursor: $cursor-hover-white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	padding: 5px 10px;
+	border: 1px solid $color-blue;
+}
+
+.button_v2:hover {
+	background-color: $color-blue;
+	border: 1px solid $color-blue;
+	transition: .5s;
+	color: $color-white !important;
+}
+
+button:disabled {
+	opacity: .6 !important;
+	cursor: default !important;
+}
+
+button:disabled:hover {
+	opacity: .6 !important;
+	cursor: default !important;
+}
+
+.button:disabled:hover {
+	// background-color: $color-btn-1;
+	opacity: .6 !important;
+	cursor: default !important;
+}
+
+.button_v2:disabled {
+	opacity: .6;
+	cursor: default;
+}
+
+.button_v2:disabled:hover {
+	opacity: .6;
+	cursor: default;
+	background: none;
+	// border: 1px solid $color-white;
+}
+
+.hover_color {
+	color: $color-blue;
+}
+
+.hover_back_color {
+	// background-color: $color-btn-1-hover;
+}
+
+.invise {
+	display: none !important;
+	height: 0 !important;
+	width: 0 !important;
+}
+
+.no_vis {
+	opacity: 0;
+}
+
+.default {
+	width: 100%;
+	max-width: 1290px;
+	margin: 0 auto 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.default a {
+	color: $color-blue;
+	text-decoration: underline;
+	display: inline-block;
+}
+
+.default ul {
+	list-style-position: inside;
+	padding-left: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.default ol {
+	list-style-position: inside;
+	padding-left: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding-left: 0;
+}
+
+.default ul li {
+	list-style: disc;
+}
+
+.default ul li::marker {
+	color: $color-black-1;
+}
+
+.default table {
+	width: 100%;
+}
+
+.default caption {
+	border-bottom: none;
+	background-color: #908ea3;
+}
+
+.default thead th {
+	background-color: #908ea3;
+}
+
+.default tbody td {
+	background-color: #d4d4da;
+	text-align: center;
+}
+
+.fancybox-button *,
+.fancybox-infobar * {
+	color: #FFF !important;
+}
+
+.fancybox-caption__body {
+	color: $color-white;
+}
+
+.bread {
+
+	ul.def_div {
+		display: flex;
+		gap: 12px;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 20px 15px;
+		width: 100px;
+		max-width: 1320px;
+
+		li {
+			font-family: Geologica;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0%;
+			color: $color-grey-2;
+
+			a {
+				font-family: Geologica;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 15px;
+				letter-spacing: 0%;
+				color: $color-black;
+			}
+		}
+	}
+}
+
+[data-href] {
+	cursor: $cursor-hover-white;
+}
