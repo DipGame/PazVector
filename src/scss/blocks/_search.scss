@@ -1,0 +1,124 @@
+.search_section {
+    background: linear-gradient(74.34deg, #2AC44E 3.46%, #038D44 40.79%, #00965E 59.46%, #00965E 96.79%);
+}
+
+.search {
+    padding: 30px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    .select_cont {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        position: relative;
+
+        select {
+            padding: 0 20px;
+            background-color: #FFF;
+            border-radius: 8px;
+            height: 70px;
+            // width: 100%;
+            min-width: 206px;
+            cursor: pointer;
+            font-family: Roboto Flex;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+        }
+
+        svg {
+            position: absolute;
+            right: 20px;
+        }
+
+        select:focus {
+            outline: none;
+        }
+    }
+
+    .input_cont {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+
+        .search_svg, .clear_svg {
+            position: absolute;
+            left: 20px;
+        }
+
+        .clear_svg {
+            left: auto;
+            right: 20px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .clear_svg:hover {
+            transform: scale(1.05) rotate(90deg);
+            transition: .5s;
+        }
+    }
+
+    input {
+        background-color: #FFF;
+        border-radius: 8px;
+        height: 70px;
+        width: 100%;
+        padding-left: 64px;
+        padding-right: 64px;
+        font-family: Roboto Flex;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+    }
+
+    input::placeholder {
+        font-family: Roboto Flex;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #71717A;
+    }
+
+    .button_1 {
+        max-width: 130px;
+        font-family: Roboto Flex;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38.4px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 720px) {
+    .search {
+        flex-direction: column;
+    }
+
+    .search .select_cont select {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .search .input_cont {
+        margin-left: 0;
+    }
+
+    .search .button_1 {
+        height: 70px;
+        max-width: none;
+    }
+}

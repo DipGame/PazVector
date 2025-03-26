@@ -1,0 +1,307 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 80px;
+
+    h2 {
+        font-family: Roboto Flex;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .cont_1 {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 60px;
+
+        .default {
+            width: 100%;
+            max-width: 560px;
+            margin: 0;
+
+            * {
+                font-family: Roboto Flex;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+        }
+
+        .img {
+            width: 100%;
+            max-width: 560px;
+
+            img {
+                object-fit: contain;
+                object-position: center;
+                border-radius: 12px;
+                width: 100%;
+            }
+        }
+    }
+
+    .cont_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 80px;
+
+        h3 {
+            font-family: Roboto Flex;
+            font-weight: 600;
+            font-size: 52px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-transform: none;
+        }
+
+        .help_cont {
+            * {
+                font-family: Roboto Flex;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 1160/400;
+            border-radius: 12px;
+        }
+    }
+}
+
+.quest_answer {
+    h3 {
+        font-family: Roboto Flex;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 30px;
+        text-transform: none;
+    }
+
+    .sect {
+        padding: 30px 0 10px;
+        border-top: 1px solid #B1B1B1;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: .5s;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding-right: 30px;
+
+            svg {
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: .5s;
+            }
+
+            h4 {
+                font-family: Roboto Flex;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-transform: none;
+            }
+
+            .minus {
+                opacity: 0;
+            }
+        }
+
+        .default {
+            margin: 0;
+            transition: .5s;
+            padding-top: 20px;
+
+            * {
+                font-family: Roboto Flex;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+            }
+        }
+
+        .cont {
+            overflow: hidden;
+            /* Скрываем переполнение */
+            height: 0;
+            /* Начальная высота */
+            transition: height 0.5s ease;
+            /* Плавная анимация */
+        }
+    }
+
+    .sect.active {
+        .default {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            .minus {
+                opacity: 1;
+                transform: rotate(360deg);
+            }
+
+            .plus {
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+    }
+
+
+}
+
+@media (max-width: 960px) {
+    .about .cont_1 {
+        flex-direction: column;
+
+        .default,
+        .img {
+            max-width: none;
+        }
+
+        .img {
+            aspect-ratio: 343/245;
+        }
+    }
+}
+
+@media (min-width: 501px) {
+    .quest_answer {
+        .sect:hover {
+            transition: .5s;
+            transform: translateY(-10%);
+        }
+    }
+    .quest_answer {
+        .sect.active:hover {
+            transition: .5s;
+            transform: translateY(0%);
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .about_section {
+        background-color: #FFF;
+    }
+
+    .about {
+        padding: 50px 0 80px;
+
+        h2 {
+            font-family: Roboto Flex;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .cont_1 {
+
+            .default {
+                font-family: Roboto Flex;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                * {
+                    font-family: Roboto Flex;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+
+        .cont_2 {
+            margin-bottom: 50px;
+
+            h3 {
+                font-family: Roboto Flex;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+
+            .help_cont {
+                * {
+                    font-family: Roboto Flex;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 150%;
+                    letter-spacing: 0%;
+                }
+            }
+
+            img {
+                aspect-ratio: 343/400;
+            }
+        }
+    }
+
+    .quest_answer {
+        h3 {
+            font-family: Roboto Flex;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        .sect {
+
+            .title {
+                h4 {
+                    font-family: Roboto Flex;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                }
+            }
+
+            .default {
+                font-family: Roboto Flex;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                * {
+                    font-family: Roboto Flex;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+}

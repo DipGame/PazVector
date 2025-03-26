@@ -1,0 +1,89 @@
+.baner_section {
+    padding: 56px 16px;
+    background-image: url('./../img/18528ca50eaa1aa08ffe88e7b4572ff2.png');
+    background-size: auto 100%;
+    background-position: 88% 0;
+}
+
+@media (min-width: 1921px) {
+    .baner_section {
+        background-position: 68% 0;
+    }
+}
+
+.baner {
+    padding: 30px 0;
+
+    .cont {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .default {
+            margin: 0;
+
+            * {
+                font-family: Roboto Flex;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                letter-spacing: 0%;
+            }
+
+            ul,
+            ol {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1610px) {
+    .baner_section {
+        background-position: 100% 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .baner_section {
+        background-position: 150% 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .baner_section {
+        background-position: 400px 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .baner_section {
+        background-position: 305px 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .baner_section {
+        padding: 0 16px 150px;
+        background-position: 50% 100%;
+        background-size: 90% auto;
+    }
+
+    .baner {
+        padding: 50px 0;
+
+        .cont {
+            width: 100%;
+        }
+    }
+
+    .baner .cont .default * {
+        font-family: Roboto Flex;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0%
+    }
+}

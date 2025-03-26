@@ -1,0 +1,53 @@
+.info_section {
+    padding: 100px 16px;
+    background: linear-gradient(74.34deg, #2AC44E 3.46%, #038D44 40.79%, #00965E 59.46%, #00965E 96.79%);
+
+    * {
+        color: #FFF;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3 {
+            font-family: Roboto Flex;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 130%;
+            letter-spacing: 0%;
+        }
+
+        .default {
+            margin: 0;
+
+            font-family: Roboto Flex;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0%;
+
+            * {
+                font-family: Roboto Flex;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .info {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
